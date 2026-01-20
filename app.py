@@ -1,4 +1,3 @@
-SchoolProject
 import streamlit as st
 import pyodbc
 
@@ -62,3 +61,4 @@ elif choice == "التقارير":
                 st.warning("الطالب غير موجود.")
         except Exception as e:
             st.error(f"حدث خطأ: {e}")
+
