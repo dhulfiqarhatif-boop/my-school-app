@@ -3,10 +3,10 @@ import pyodbc
 
 # وظيفة الاتصال بقاعدة البيانات
 def get_conn():
-    # ملاحظة: إذا كنت سترفع الموقع أونلاين، ستحتاج لتغيير اسم السيرفر لاحقاً
+   
     conn_str = (
         'DRIVER={SQL Server};'
-        'SERVER=(local);'  # تأكد أن هذا هو اسم سيرفرك في SQL Management Studio
+        'SERVER=(local);'  SQL Management Studio
         'DATABASE=SchoolManagementDB;'
         'Trusted_Connection=yes;'
     )
@@ -61,4 +61,5 @@ elif choice == "التقارير":
                 st.warning("الطالب غير موجود.")
         except Exception as e:
             st.error(f"حدث خطأ: {e}")
+
 
